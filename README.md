@@ -1,1 +1,1 @@
-![image](C:\Users\vyshn\OneDrive\Pictures\Screenshots\Screenshot(57)") 
+![image](C:\Users\vyshn\OneDrive\Pictures\Screenshots") 
