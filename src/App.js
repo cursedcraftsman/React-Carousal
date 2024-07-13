@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './App.css';   
+import p4 from "./batman4.avif";
+import p2 from "./batman2.jpg";
+import p3 from "./batman3.avif";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <> 
+    <body> 
+    <h1 className='BatmanHeading'>The Batman</h1>
+    <div className="carousel-container">   
+      <div id="carouselExampleIndicators" className="carousel slide">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={p4} className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+            <img src={p2} className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+            <img src={p3} className="d-block w-100" alt="..."/>
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+    </body>
+    </>
   );
 }
 
